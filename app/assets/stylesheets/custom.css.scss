@@ -1,0 +1,274 @@
+//@import "bootstrap";
+
+/*--------------------------Universal----------------------------------*/
+html {
+	overflow-y: scroll;
+}
+body{
+
+}
+header{
+	margin-bottom:20px;
+}
+section {
+	overflow: auto;
+}
+textarea {
+  	resize: vertical;
+}
+.center {
+  	text-align: center;
+}
+/*---------------------------Button Link-------------------------------*/
+.b {
+	display: inline-block;
+	padding: 4px 12px;
+	margin-bottom: 0px;
+	font-size:14px;
+	line-height:20px;
+	color:#ffffff;
+	text-align:center;
+	border:1px solid;
+    border-color:  rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1);
+	border-radius: 4px;
+	background: -ms-linear-gradient(bottom, #1400c8, #7878ff);
+	&:hover,&:focus{
+	  	color: #ffffff;
+	  	text-decoration:none;
+	    background: -ms-linear-gradient(bottom, #000148, #9090ff);
+        }
+    &:active{
+		background: -ms-linear-gradient(bottom, #0b0038, #000070);
+		text-shadow: 3px 3px 10px #ffffff;
+		box-shadow:0px 0px 20px #000110;
+    }
+}
+/*------------------------------------Header Style----------------------------------*/
+.navpan{
+    position:absolute;
+    top:0px;
+    width:1363px;
+	border:1px solid;
+	border-color:  rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1);
+	border-radius:3px;
+    background:-ms-linear-gradient(bottom left,#fffe38,#f81800,#0cf000);
+    box-shadow:inset 2px 2px 5px #ffffff;
+}
+#logo{
+    position:relative;
+    top:20px;
+    left:30px;
+	text-decoration:none;
+	text-transform:uppercase;
+	font-style:italic;
+	font-weight:bold;
+	letter-spacing:5px;
+	font-size:30px;
+	text-shadow:5px 5px 5px #0000ff;
+	line-height:1;
+	&:active{
+		border-radius:4px;
+		box-shadow:inset 2px 2px 4px #ffffff;
+	}
+}
+/*-----------------------------Navigation Panel Header-Footer-----------------------*/
+.navig-footer > ul,.navig-header > ul{
+	float:right;
+	list-style:none;
+	position:relative;
+	li {
+		float:left;
+		margin-left:10px;
+	    padding-right:5px;
+	};
+}
+.navig-footer > ul ,.navig-header > ul {
+	a:hover,a:active,a:focus{
+		text-decoration:none;
+		text-shadow:0px 0px 2px #ffffff;
+	}
+	a:active{
+		border-color:  rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1);
+	    border-radius: 2px;  
+	    box-shadow:inset 0px 0px 10px #ff4828;
+	    color:#ffffff;
+	}
+}
+.navig-footer > ul li{
+	a:active{
+    	background-color:#5050ff;
+	}
+}
+
+.navig-header > ul li{
+	a:active{
+    	background-color:#00f000;
+	}
+}
+.navig-footer {
+	display:inline;
+}
+/*----------------------------------Container----------------------------------*/
+.case{
+    background:-ms-linear-gradient(top,#a8bdff,#d8dbff);
+	position:absolute;
+    top:62px;
+}
+/*-------------------------General Style for all pages-------------------------*/
+
+/*--------------------------------Home Page Style------------------------------*/
+.greeting{
+	text-align:center;
+	border:1px solid;
+	border-color:  rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1);
+	border-radius:3px;
+	width:1363px;
+    background:-ms-linear-gradient(bottom left,#fffe38,#f81800,#0cf000);
+    box-shadow:inset 2px 2px 5px #ffffff;
+}
+/*---------------------------------Footer Style--------------------------------*/
+footer{
+    float:left;
+	text-align:center;
+    border:1px solid;
+	border-color:  rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1);
+	border-radius:3px;
+	width:1363px;
+    background:-ms-linear-gradient(bottom left,#fffe38,#f81800,#0cf000);
+    box-shadow:inset 2px 2px 5px #ffffff;
+    margin-bottom:-0px;
+}
+footer > p{
+	display:inline;
+	position:relative;
+	top:10px;
+	left:100px;
+}
+/*---------------------------------Debug-------------------------------------*/
+.debug_dump {
+ margin-bottom:0px;
+}
+.pluralize{
+    border-radius:2px;
+	background-color:#ffa4a0;
+	color:#ff2600;
+	width:220px;
+}
+.errors{
+	li{
+		color:#ff2600;
+		margin-left:-15px;
+	}
+}
+.field_with_errors {
+  	color:#ff2600;
+  	input{
+  		border-color:#ff2600;
+  		color:#ff2600;
+  	}
+  }
+aside{
+  	section{
+  		h1{
+  			font-size:1.2em;
+  			margin-top:0px;
+  		}
+  	}
+}
+/*------------------------------------------Person------------------------------------------*/
+.gravatar{
+	margin-left:10px;
+	margin-top:10px;
+	margin-bottom:0px;
+}
+.name{
+	position:relative;
+	top:-20px;
+	color:#2020ff;
+	text-shadow:0px 2px 2px #fffed8;
+	font:12pt sans-serif;
+	text-transform:capitalize;
+}
+/*-------------------------------------------Flash-------------------------------------------*/
+.flash{
+	text-align:center;
+	border-radius:4px;
+	text-shadow:0px 1px 0px;
+	width:250px;
+}
+.flash_succ{
+	background-color:#67ff60;
+	color:#009015;
+	border-color:#00800c;
+	
+}
+.flash_err{
+	background-color:#ff7350;
+	color:#a02000;
+	border-color:#a81900;
+}
+.flash_notice{
+	background-color:#f9ff90;
+	color:#f8a100;
+	border-color:#f3ff18;
+}
+/*------------------------------------Registration Form--------------------------------------*/
+.new{
+	margin-left:575px;	
+	input[type=text]:focus,input[type=password]:focus{
+		outline:0;
+		border:2px solid #00f;
+	}
+	input[type=submit]{
+	    display:block;
+		margin-bottom:30px;
+		position:relative;
+		top:10px;
+	}
+	label{
+		color:#5050ff;
+		letter-spacing:2px;
+		font-weight:bold;
+		font-style:italic;
+		text-shadow:1px 3px 3px #fff
+	}
+	h1{
+		margin-left:40px;
+		color:#190080;
+		text-shadow:1px 3px 3px #fff
+	}
+
+}
+/*----------------------------Account Dropdown menu----------------------------------------------*/
+.dropdown{
+	border: 1px dotted #0d5800;
+	box-shadow:inset 0 0 5px #5c40ff;
+	&:hover{
+		box-shadow:inset 0 0 10px #5c40ff;
+	    text-shadow:0 0 3px #fff;
+	}
+}
+.dropdown > ul{
+		display:none;
+		position:absolute;
+		top:150%;
+		left:-50%;
+	}
+li.dropdown:hover ul{
+	display:inline-table;
+	width:70px;
+	list-style:none;
+	background:-ms-linear-gradient(top,#d9c0ff,#fde0ff);
+	border-radius:5px;
+	z-index:100;
+	& > li{
+		float:none;
+		padding:2px 0;
+		text-shadow:none;
+	}
+	& > hr{
+		margin:0;
+	}
+}
+/*-----------------------------------------------------------------------------------------------*/
+
